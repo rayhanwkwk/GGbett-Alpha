@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaintanceFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imagemain"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/maintance" />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagemain"
+            android:padding="5dp"
+            android:text="@string/deskripsi"
+            android:textAlignment="center"
+            android:textColor="@color/app_theme"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/judul"
+            android:lineSpacingExtra="3dp"
+            android:padding="5dp"
+            android:text="@string/isi"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/app_theme"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</FrameLayout>

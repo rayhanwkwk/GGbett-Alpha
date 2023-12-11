@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "271437039954",
+    "firebase_url": "https://ggbettdatabase-default-rtdb.firebaseio.com",
+    "project_id": "ggbettdatabase",
+    "storage_bucket": "ggbettdatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271437039954:android:c65455c7837eb963b6528b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3yXp_IBLSZ1m7L2pBW2ieGDuY2tj-1qg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

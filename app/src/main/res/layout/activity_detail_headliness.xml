@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Models.Detail_Headliness">
+
+    <ScrollView
+        android:id="@+id/scroolView"
+        android:scrollbars="none"
+        android:layout_above="@id/buttonselesai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Thumbnail -->
+            <ImageView
+                android:layout_alignParentTop="true"
+                android:id="@+id/imageThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/not_available"
+                android:contentDescription="@string/thumbnail_description" />
+
+            <!-- Title -->
+            <TextView
+                android:layout_below="@id/imageThumbnail"
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <!-- Short Description -->
+            <TextView
+                android:layout_below="@id/textTitle"
+                android:id="@+id/textShortDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:id="@+id/garis"
+                android:layout_below="@id/textShortDescription"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ECECEC"/>
+
+            <!-- Description -->
+            <TextView
+                android:layout_below="@id/garis"
+                android:id="@+id/textDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/textAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textDescription"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/app_theme"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:backgroundTint="@color/app_theme"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="Kembali"
+        app:cornerRadius="10dp"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttonselesai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
